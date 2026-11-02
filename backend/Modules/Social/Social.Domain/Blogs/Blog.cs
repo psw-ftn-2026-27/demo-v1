@@ -26,7 +26,7 @@ public sealed class Blog : AggregateRoot
     {
         if (string.IsNullOrWhiteSpace(title))
         {
-            throw new DomainException("A blog requires a title.");
+            throw new DomainException("A blog must have a title.");
         }
         if (string.IsNullOrWhiteSpace(description))
         {
